@@ -107,9 +107,9 @@ export default function Home() {
 
     switch (type) {
       case "M":
-        return "bg-orange-50 text-gray-900"; // 朝：薄いオレンジ、文字は黒
+        return "bg-orange-200 text-white"; // 朝：薄いオレンジ、文字は黒
       case "L":
-        return "bg-sky-50 text-gray-900";    // 昼：薄い青、文字は黒
+        return "bg-sky-200 text-white";    // 昼：薄い青、文字は黒
       case "D":
         return "bg-slate-900 text-white";   // 夜：濃いグレー、文字は白
       default:
