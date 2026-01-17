@@ -39,7 +39,7 @@ export default function Home() {
     fetch("/cat.csv")
       .then((res) => res.text())
       .then((csv) => {
-        const parsed = Papa.parse(csv, { header: true });
+        const parsed = Papa.parse<Category>(csv, { header: true });
         setCategories(parsed.data);
         // 初期値を最初の項目に設定しておくと親切
         if (parsed.data.length > 0) {
